@@ -1,0 +1,7 @@
+1. scroll시 txt transform trnslateX 
+2. circle animation (about)
+3. scroll시 백그라운드 변경(work)
+4. top btn 
+5. 반응형
+6. gnb or navi
+7. 풀화면 bg 였다가 페이지 들어가면 padding  http://www.hanbom.com/
