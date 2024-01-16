@@ -1,712 +1,769 @@
 <!doctype html>
-	<html lang="ko">
-	<head>
-		<meta charset="UTF-8">		
-		<link rel="shortcut icon" href="psy.ico" type="image/x-icon">
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-		<meta name="viewport" content="user-scalable=yes, maximum-scale=1.0, minimum-scale=0.25, width=1200">
-		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
-		<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-		<!-- 호환성 보기 제거 메타 -->
-		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-		<link rel="stylesheet" href="css/style.css">
-		<link rel="stylesheet" href="css/style_tab.css">
-		<link rel="stylesheet" href="css/style_mob.css">
-		<link rel="stylesheet" href="css/font.css">
-		<link rel="stylesheet" href="css/swiper.min.css">
-		<script src="js/swiper.min.js"></script>
-		<link rel="stylesheet" href="css/aos.css">
-		<script type="text/javascript" src="js/skrollr.js"></script>
-		<script src="js/aos.js"></script>
-		<title>PARKSOYOUNG-PORTFOLIO</title>
-	</head>
-	<body>
-		<div id="wrap" data-0-start="background:rgb(26,26,26);" data-400-start="background:rgb(255,65,65);">
-			<header id="header" class="work">
-				<div class="inner">
-					<h1 class="logo"><a href="index.html"><img src="images/main/color_logo.png" alt="logo"></a></h1>
-					<ul class="gnb clfix">
-						<li class="on" data-start="color:rgb(0,0,0)" data-200-start="color:rgb(255, 255, 255)"><a href="index.html">HOME</a></li>
-						<li data-start="color:rgb(0,0,0)" data-200-start="color:rgb(255, 255, 255)"><a href="work.html">WORK</a></li>
-						<li data-start="color:rgb(0,0,0)" data-200-start="color:rgb(255, 255, 255)"><a href="about.html">ABOUT</a></li>
-					</ul><!-- //gnb -->
-					
-				</div><!-- //inner -->
-			</header><!-- //header -->
+<html lang="ko">
 
-			<div class="navi_btn">
-				<span></span>
-				<span></span>
-				<span></span>
-			</div>
-			<div class="navigation">
-				<div class="lnb">
-					<h3><a href="index.html">
-						<span>01</span>
-						<strong>Home</strong>
-					</a></h3>
-					<h3><a href="work.html">
-						<span>02</span>
-						<strong>Work</strong>
-					</a></h3>
-					<h3><a href="about.html">
-						<span>03</span>
-						<strong>About</strong>
-					</a></h3>
-				</div>
-			</div><!-- //navigation -->
+<head>
+	<meta charset="utf-8">
+	<link rel="shortcut icon" href="psy.ico" type="image/x-icon">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, viewport-fit=cover">
+	<meta name="format-detection" content="telephone=no, address=no, email=no">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/swiper.min.css">
+	<link rel="stylesheet" href="css/aos.css">
 
-			<div id="sub_contents">
-				<div class="tab_Wrap">
-					<ul class="tab_tit">
-						<li class="on">RESPONSIVE</li>
-						<li>PC</li>
-						<li>MOBILE</li>
+	<script src="js/jquery-3.5.1.min.js"></script>
+	<!-- <script src="js/jquery-ui.js"></script> -->
+	<script type="text/javascript" src="js/ui.js"></script>
+	<script src="js/swiper.min.js"></script>
+	<script src="js/aos.js"></script>
+	<script type="text/javascript" src="js/skrollr.js"></script>
+
+	<title>PARKSOYOUNG-PORTFOLIO</title>
+</head>
+
+<body>
+	<div id="wrap" class="main" data-0-start="background:rgb(26,26,26);" data-400-start="background:rgb(255,65,65);">
+		<header class="header">
+			<div class="inner">
+				<h1 class="logo"><a href="index.html"><span class="blind">SO WEB PUBLISHER</span></a></h1>
+				<ul class="gnb">
+					<li data-start="color:rgb(0,0,0)" data-200-start="color:rgb(255, 255, 255)"><a href="index.html">HOME</a></li>
+					<li data-start="color:rgb(0,0,0)" data-200-start="color:rgb(255, 255, 255)"><a href="work.html">WORK</a></li>
+					<!-- <li data-start="color:rgb(0,0,0)" data-200-start="color:rgb(255, 255, 255)"><a href="about.html">ABOUT</a> -->
+					</li>
+				</ul>
+				<button type="button" class="navi_btn">
+					<span></span>
+					<span></span>
+					<span></span>
+				</button>
+				<div class="navigation">
+					<ul>
+						<li>
+							<a href="index.html">
+								<span>01</span>
+								<strong>Home</strong>
+							</a>
+						</li>
+						<li>
+							<a href="work.html">
+								<span>02</span>
+								<strong>Work</strong>
+							</a>
+						</li>
+						<!-- <li>
+							<a href="about.html">
+								<span>03</span>
+								<strong>About</strong>
+							</a>
+						</li> -->
 					</ul>
+				</div>
+			</div>
+		</header>
+		<main class="sub_content">
+			<div class="inner">
+				<div class="tab_wrap">
+					<div class="tab_btn">
+						<button type="button" class="on">RESPONSIVE</button>
+						<button type="button">PC</button>
+						<button type="button">MOBILE</button>
+					</div>
 					<div class="tab_con">
-						<!-- Responsive -->
-						<ul class="work_list clfix tab">
+						<!-- responsive-->
+						<ul class="tab">
 							<li data-aos="fade-up">
-								<h3 class="work_tit">SHINHAN</h3>
+								<h3>경기도평생교육진흥원</h3>
 								<strong>- Responsive</strong>
-								<a href="https://beautifulshinhan.co.kr" style="background:url(images/main/shinhan.jpg) no-repeat center center  / cover" target="_blank"></a>
+								<a href="https://www.gill.or.kr/gill/index.do" title="새창으로 열림" target="_blank">
+									<img src="images/gill.jpg" alt="경기도평생교육진흥원">
+								</a>
 							</li>
 							<li data-aos="fade-up">
-								<h3 class="work_tit">3POP</h3>
+								<h3>서울예술대학교</h3>
 								<strong>- Responsive</strong>
-								<a href="http://3poppc.com/" style="background:url(images/main/3pop.jpg) no-repeat center center  / cover" target="_blank"></a>
+								<a href="https://www.seoularts.ac.kr/web/main/mainPage.do" title="새창으로 열림" target="_blank">
+									<img src="images/seoul.jpg" alt="서울예술대학교">
+								</a>
 							</li>
 							<li data-aos="fade-up">
-								<h3 class="work_tit">BOXNE</h3>
-								<strong>- PC</strong>
-								<a href="https://www.boxne.co.kr/" style="background:url(images/main/boxne.jpg) no-repeat center center  / cover" target="_blank"></a>
-							</li>
-							<li data-aos="fade-up">
-								<h3 class="work_tit">NUCLIX BIO</h3>
-								<strong>- PC</strong>
-								<a href="http://www.nuclixbio.com/" style="background:url(images/main/nuclixbio.jpg) no-repeat center center  / cover" target="_blank"></a>
-							</li>
-							<li data-aos="fade-up">
-								<h3 class="work_tit">코어인사이트</h3>
-								<strong>- PC</strong>
-								<a href="http://www.coreinsight.co.kr/" style="background:url(images/main/coreinsight.jpg) no-repeat center center  / cover" target="_blank"></a>
-							</li>
-							<li data-aos="fade-up">
-								<h3 class="work_tit">한국도자재단</h3>
-								<strong>- PC</strong>
-								<a href="http://csic.kr/main.asp" style="background:url(images/main/csic.jpg) no-repeat center center  / cover" target="_blank"></a>
-							</li>
-							<li data-aos="fade-up">
-								<h3 class="work_tit">드림온협동조합</h3>
-								<strong>- PC</strong>
-								<a href="http://www.dreamoncoop.com/" style="background:url(images/main/dreamon.jpg) no-repeat center center  / cover" target="_blank"></a>
-							</li>
-							<li data-aos="fade-up">
-								<h3 class="work_tit">ICT문화융합센터</h3>
-								<strong>- PC</strong>
-								<a href="http://www.ictculture.kr/" style="background:url(images/main/ict.jpg) no-repeat top center  / cover" target="_blank"></a>
-							</li>
-							<li data-aos="fade-up">
-								<h3 class="work_tit">ITFORWARD</h3>
-								<strong>- PC</strong>
-								<a href="http://www.itforward.co.kr/main.php" style="background:url(images/main/itforward.jpg) no-repeat center center  / cover" target="_blank"></a>
-							</li>
-							<li data-aos="fade-up">
-								<h3 class="work_tit">정립회관</h3>
-								<strong>- PC</strong>
-								<a href="#" style="background:url(images/main/jeongnip01.jpg) no-repeat top center  / cover" target="_blank"></a>
-							</li>
-							<li data-aos="fade-up">
-								<h3 class="work_tit">대한건설기계협회</h3>
-								<strong>- PC</strong>
-								<a href="http://edu.kcea.or.kr/" style="background:url(images/main/korea_construction.jpg) no-repeat top center  / cover" target="_blank"></a>
-							</li>
-							<li data-aos="fade-up">
-								<h3 class="work_tit">한국소아마비협회</h3>
-								<strong>- PC</strong>
-								<a href="http://www.kpa1966.or.kr/" style="background:url(images/main/kpa.jpg) no-repeat center center  / cover" target="_blank"></a>
-							</li>
-							<li data-aos="fade-up">
-								<h3 class="work_tit">한국안전기술협회</h3>
-								<strong>- PC</strong>
-								<a href="http://edu.korsta.or.kr/" style="background:url(images/main/ksta.jpg) no-repeat center center  / cover" target="_blank"></a>
-							</li>
-							<li data-aos="fade-up">
-								<h3 class="work_tit">LEAD SPACE</h3>
-								<strong>- PC</strong>
-								<a href="http://www.leadspace.co.kr/" style="background:url(images/main/leadspace.jpg) no-repeat top center  / cover" target="_blank"></a>
-							</li>
-							<li data-aos="fade-up">
-								<h3 class="work_tit">MTC</h3>
-								<strong>- PC</strong>
-								<a href="http://mtcgamgak.gamgakdesign.com/main.php" style="background:url(images/main/mtc.jpg) no-repeat top center  / cover" target="_blank"></a>
-							</li>
-							<!-- <li data-aos="fade-up">
-								<h3 class="work_tit">NEW LIFE 힐링온천</h3>
-								<strong>- PC</strong>
-								<a href="#" style="background:url(images/main/newlife.jpg) no-repeat center center  / cover" target="_blank"></a>
-							</li> -->
-							<li data-aos="fade-up">
-								<h3 class="work_tit">솔토지빈</h3>
-								<strong>- PC</strong>
-								<a href="http://www.soltos.kr/" style="background:url(images/main/soltozibin.jpg) no-repeat top center  / cover" target="_blank"></a>
-							</li>
-							<li data-aos="fade-up">
-								<h3 class="work_tit">성호건설</h3>
-								<strong>- PC</strong>
-								<a href="http://www.isunghoenc.com/" style="background:url(images/main/sungho.jpg) no-repeat center center  / cover" target="_blank"></a>
-							</li>
-							<li data-aos="fade-up">
-								<h3 class="work_tit">TKIS</h3>
-								<strong>- PC</strong>
-								<a href="http://www.tkisco.com/" style="background:url(images/main/tkis.jpg) no-repeat center center  / cover" target="_blank"></a>
-							</li>
-							<li data-aos="fade-up">
-								<h3 class="work_tit">TORK</h3>
-								<strong>- PC</strong>
-								<a href="http://www.torkkorea.co.kr/" style="background:url(images/main/vinda.jpg) no-repeat top center  / cover" target="_blank"></a>
-							</li>
-							<li data-aos="fade-up">
-								<h3 class="work_tit">청년이룸</h3>
-								<strong>- PC</strong>
-								<a href="http://www.youtheroom.kr/" style="background:url(images/main/youtheroom.jpg) no-repeat center center  / cover" target="_blank"></a>
-							</li>
-							<li data-aos="fade-up">
-								<h3 class="work_tit">SEAZONE</h3>
-								<strong>- PC</strong>
-								<a href="http://www.seazonekorea.com/" style="background:url(images/main/seazone.jpg) no-repeat center center  / cover" target="_blank"></a>
-							</li>
-							<!-- <li data-aos="fade-up">
-								<h3 class="work_tit">ZABEL</h3>
-								<strong>- PC</strong>
-								<a href="#" style="background:url(images/main/zabel.jpg) no-repeat center center  / cover" target="_blank"></a>
-							</li> -->
-						</ul>
-						<!-- PC -->
-						<ul class="work_list clfix tab">
-							<li data-aos="fade-up">
-								<h3 class="work_tit">MEGASTUDY</h3>
-								<strong>- PC</strong>
-								<a href="http://corp.megastudy.net/" style="background:url(images/main/megastudy.jpg) no-repeat center center  / cover" target="_blank"></a>
-							</li>
-							<li data-aos="fade-up">
-								<h3 class="work_tit">TOYOKO INN</h3>
-								<strong>- PC</strong>
-								<a href="http://www.toyoko-inn.co.kr/" style="background:url(images/main/toyokoinn.jpg) no-repeat center center  / cover" target="_blank"></a>
-							</li>
-							<li data-aos="fade-up">
-								<h3 class="work_tit">홍익대학교 총동문회</h3>
-								<strong>- PC</strong>
-								<a href="http://www.hiuaa.or.kr/" style="background:url(images/main/hiuaa.jpg) no-repeat center center  / cover" target="_blank"></a>
-							</li>
-							<li data-aos="fade-up">
-								<h3 class="work_tit">SEOHO C&I</h3>
-								<strong>- PC</strong>
-								<a href="http://www.seohoci.com/" style="background:url(images/main/seohoci.jpg) no-repeat center center  / cover" target="_blank"></a>
-							</li>
-							<li data-aos="fade-up">
-								<h3 class="work_tit">INFINITY BOOKS</h3>
-								<strong>- PC</strong>
-								<a href="http://www.infinitybooks.co.kr/" style="background:url(images/main/infinitybooks.jpg) no-repeat center center  / cover" target="_blank"></a>
-							</li>
-							<li data-aos="fade-up">
-								<h3 class="work_tit">YIDO 문화재단</h3>
-								<strong>- PC</strong>
-								<a href="http://www.y-cf.kr/" style="background:url(images/main/yido.jpg) no-repeat center center  / cover" target="_blank"></a>
-							</li>
-							<li data-aos="fade-up">
-								<h3 class="work_tit">YIDO 도자기</h3>
-								<strong>- PC</strong>
-								<a href="http://yido.gamgakdesign.com/main.php" style="background:url(images/main/yido02.jpg) no-repeat center center  / cover" target="_blank"></a>
-							</li>
-							<li data-aos="fade-up">
-								<h3 class="work_tit">안경상회</h3>
-								<strong>- PC</strong>
-								<a href="http://www.marketoptic.co.kr/" style="background:url(images/main/marketoptic.jpg) no-repeat top center  / cover" target="_blank"></a>
-							</li>
-							<li data-aos="fade-up">
-								<h3 class="work_tit">HONG G</h3>
-								<strong>- PC</strong>
-								<a href="http://hongg.co.kr/" style="background:url(images/main/hongg.jpg) no-repeat center center  / cover" target="_blank"></a>
-							</li>
-							<li data-aos="fade-up">
-								<h3 class="work_tit">퀸즈로즈</h3>
-								<strong>- PC</strong>
-								<a href="http://www.queensrose.com/" style="background:url(images/main/queensrose.jpg) no-repeat top center  / cover" target="_blank"></a>
-							</li>
-							<li data-aos="fade-up">
-								<h3 class="work_tit">MC INVESTMENT</h3>
-								<strong>- PC</strong>
-								<a href="http://mcinv.co.kr/" style="background:url(images/main/mc_investment.jpg) no-repeat center center  / cover" target="_blank"></a>
-							</li>
-							<li data-aos="fade-up">
-								<h3 class="work_tit">ANT</h3>
+								<h3>CALI dande studio</h3>
 								<strong>- Responsive</strong>
-								<a href="http://antint.gamgakdesign.com/main.php" style="background:url(images/main/ant.jpg) no-repeat top center  / cover" target="_blank"></a>
+								<a href="https://calidance.kr/" title="새창으로 열림" target="_blank">
+									<img src="images/cali.jpg" alt="캘리댄스스튜디오">
+								</a>
 							</li>
 							<li data-aos="fade-up">
-								<h3 class="work_tit">북코리아</h3>
+								<h3>한국어촌어항공단</h3>
 								<strong>- Responsive</strong>
-								<a href="http://bookgamgak.gamgakdesign.com/main.php" style="background:url(images/main/bookkorea.jpg) no-repeat top center  / cover" target="_blank"></a>
+								<a href="https://www.fipa.or.kr/fipa/index.do" title="새창으로 열림" target="_blank">
+									<img src="images/fipa.jpg" alt="한국어촌어항공단">
+								</a>
 							</li>
 							<li data-aos="fade-up">
-								<h3 class="work_tit">UPWORKS</h3>
+								<h3>한국무역보험공사</h3>
 								<strong>- Responsive</strong>
-								<a href="http://upworks.gamgakdesign.com/main.php" style="background:url(images/main/upworks.jpg) no-repeat top center  / cover" target="_blank"></a>
+								<a href="https://www.ksure.or.kr/" title="새창으로 열림" target="_blank">
+									<img src="images/ksure.jpg" alt="한국무역보험공사">
+								</a>
 							</li>
 							<li data-aos="fade-up">
-								<h3 class="work_tit">SPORTS DOCTORS</h3>
-								<strong>- PC</strong>
-								<a href="http://www.sportsdoctors.or.kr/" style="background:url(images/main/sportsdoctors.jpg) no-repeat top center  / cover" target="_blank"></a>
+								<h3>템포커피</h3>
+								<strong>- Responsive</strong>
+								<a href="http://tempocoffee.co.kr/web/main/mainPage.do;jsessionid=4CBFD363AB9D67EE67E4E8EDE64ACE1A"
+									title="새창으로 열림" target="_blank">
+									<img src="images/tempo.jpg" alt="템포커피">
+								</a>
 							</li>
 							<li data-aos="fade-up">
-								<h3 class="work_tit">부여군 도시재생지원센터</h3>
-								<strong>- PC</strong>
-								<a href="http://www.buyeo-urc.kr/" style="background:url(images/main/buyeo.jpg) no-repeat center center  / cover" target="_blank"></a>
+								<h3>안산시평생학습관</h3>
+								<strong>- Responsive</strong>
+								<a href="https://lll.ansan.go.kr" title="새창으로 열림" target="_blank">
+									<img src="images/ansan.jpg" alt="안산시평생학습관">
+								</a>
 							</li>
 							<li data-aos="fade-up">
-								<h3 class="work_tit">CASIO</h3>
-								<strong>- PC</strong>
-								<a href="http://www.casioprojector.co.kr/" style="background:url(images/main/casio.jpg) no-repeat center center  / cover" target="_blank"></a>
+								<h3>서울투자청</h3>
+								<strong>- Responsive</strong>
+								<a href="https://investseoul.org/web/main/mainPage.do" title="새창으로 열림" target="_blank">
+									<img src="images/investseoul.jpg" alt="서울투자청">
+								</a>
 							</li>
 							<li data-aos="fade-up">
-								<h3 class="work_tit">CNC</h3>
-								<strong>- PC</strong>
-								<a href="http://www.cnctourkorea.com/" style="background:url(images/main/cnc.jpg) no-repeat center center  / cover" target="_blank"></a>
+								<h3>인베스트코리아</h3>
+								<strong>- Responsive</strong>
+								<a href="https://www.investkorea.org/ik-kr/index.do" title="새창으로 열림" target="_blank">
+									<img src="images/investkorea.jpg" alt="인베스트코리아">
+								</a>
 							</li>
 							<li data-aos="fade-up">
-								<h3 class="work_tit">지식장터</h3>
-								<strong>- PC</strong>
-								<a href="http://www.contentmarket.co.kr/" style="background:url(images/main/contentmarket.jpg) no-repeat top center  / cover" target="_blank"></a>
+								<h3>NATOO</h3>
+								<strong>- Responsive</strong>
+								<a href="https://natoo.co/" title="새창으로 열림" target="_blank">
+									<img src="images/natoo.png" alt="NATOO">
+								</a>
 							</li>
 							<li data-aos="fade-up">
-								<h3 class="work_tit">큐라미스</h3>
-								<strong>- PC</strong>
-								<a href="http://curamys.com/" style="background:url(images/main/curamys.jpg) no-repeat center center  / cover" target="_blank"></a>
+								<h3>SHINHAN</h3>
+								<strong>- Responsive</strong>
+								<a href="https://beautifulshinhan.co.kr" title="새창으로 열림" target="_blank">
+									<img src="images/shinhan.jpg" alt="SHINHAN">
+								</a>
 							</li>
 							<li data-aos="fade-up">
-								<h3 class="work_tit">가디안에듀</h3>
-								<strong>- PC</strong>
-								<a href="http://www.guardianedu.com/" style="background:url(images/main/guardian.jpg) no-repeat center center  / cover" target="_blank"></a>
+								<h3>3POP</h3>
+								<strong>- Responsive</strong>
+								<a href="http://3poppc.com/" title="새창으로 열림" target="_blank">
+									<img src="images/3pop.jpg" alt="3POP">
+								</a>
 							</li>
 							<li data-aos="fade-up">
-								<h3 class="work_tit">DEJAVU</h3>
-								<strong>- PC</strong>
-								<a href="http://dejavugamgak.gamgakdesign.com/main.php" style="background:url(images/main/dejavu.jpg) no-repeat center center  / cover" target="_blank"></a>
+								<h3>BOXNE</h3>
+								<strong>- Responsive</strong>
+								<a href="https://www.boxne.co.kr/" title="새창으로 열림" target="_blank">
+									<img src="images/boxne.jpg" alt="BOXNE">
+								</a>
 							</li>
 							<li data-aos="fade-up">
-								<h3 class="work_tit">DIEM</h3>
-								<strong>- PC</strong>
-								<a href="http://www.diemarchitecture.com/" style="background:url(images/main/diem.jpg) no-repeat center center  / cover" target="_blank"></a>
+								<h3>NUCLIX BIO</h3>
+								<strong>- Responsive</strong>
+								<a href="http://www.nuclixbio.com/" title="새창으로 열림" target="_blank">
+									<img src="images/nuclixbio.jpg" alt="NUCLIX BIO">
+								</a>
 							</li>
 							<li data-aos="fade-up">
-								<h3 class="work_tit">EXOSOME</h3>
-								<strong>- PC</strong>
-								<a href="http://www.exosomeplus.com/" style="background:url(images/main/exosome.jpg) no-repeat center center  / cover" target="_blank"></a>
+								<h3>코어인사이트</h3>
+								<strong>- Responsive</strong>
+								<a href="http://www.coreinsight.co.kr/" title="새창으로 열림" target="_blank">
+									<img src="images/coreinsight.jpg" alt="코어인사이트">
+								</a>
 							</li>
 							<li data-aos="fade-up">
-								<h3 class="work_tit">인하대학교 글로벌산업환경융합전공</h3>
-								<strong>- PC</strong>
-								<a href="http://ensgamgak.gamgakdesign.com/main.php" style="background:url(images/main/giet.jpg) no-repeat top center  / cover" target="_blank"></a>
+								<h3>한국도자재단</h3>
+								<strong>- Responsive</strong>
+								<a href="http://csic.kr/main.asp" title="새창으로 열림" target="_blank">
+									<img src="images/csic.jpg" alt="한국도자재단">
+								</a>
 							</li>
 							<li data-aos="fade-up">
-								<h3 class="work_tit">국제미래학회</h3>
-								<strong>- PC</strong>
-								<a href="http://gfuturestudy.org/" style="background:url(images/main/globalfuture.jpg) no-repeat top center  / cover" target="_blank"></a>
+								<h3>드림온협동조합</h3>
+								<strong>- Responsive</strong>
+								<a href="http://www.dreamoncoop.com/" title="새창으로 열림" target="_blank">
+									<img src="images/dreamon.jpg" alt="드림온협동조합">
+								</a>
 							</li>
 							<li data-aos="fade-up">
-								<h3 class="work_tit">한국환경기술인협회</h3>
-								<strong>- PC</strong>
-								<a href="http://hrd.keef.or.kr/" style="background:url(images/main/hrd.jpg) no-repeat center center  / cover" target="_blank"></a>
+								<h3>ITFORWARD</h3>
+								<strong>- Responsive</strong>
+								<a href="http://www.itforward.co.kr/main.php" title="새창으로 열림" target="_blank">
+									<img src="images/itforward.jpg" alt="ITFORWARD">
+								</a>
 							</li>
 							<li data-aos="fade-up">
-								<h3 class="work_tit">화 스튜디오</h3>
-								<strong>- PC</strong>
-								<a href="http://harmonyhwa.gamgakdesign.com/main.php" style="background:url(images/main/hwa.jpg) no-repeat top center  / cover" target="_blank"></a>
+								<h3>정립회관</h3>
+								<strong>- Responsive</strong>
+								<a href="http://www.jeongnip.or.kr/" title="새창으로 열림" target="_blank">
+									<img src="images/jeongnip01.jpg" alt="정립회관">
+								</a>
 							</li>
 							<li data-aos="fade-up">
-								<h3 class="work_tit">한양대학교 건강케어</h3>
-								<strong>- PC</strong>
-								<a href="http://www.hycare.or.kr/main.php" style="background:url(images/main/hycare.jpg) no-repeat center center  / cover" target="_blank"></a>
+								<h3>대한건설기계협회</h3>
+								<strong>- Responsive</strong>
+								<a href="http://edu.kcea.or.kr/" title="새창으로 열림" target="_blank">
+									<img src="images/korea_construction.jpg" alt="대한건설기계협회">
+								</a>
 							</li>
 							<li data-aos="fade-up">
-								<h3 class="work_tit">한양대학교 최고경영자</h3>
-								<strong>- PC</strong>
-								<a href="http://www.hyceo.or.kr/" style="background:url(images/main/hyceo.jpg) no-repeat center center  / cover" target="_blank"></a>
+								<h3>한국소아마비협회</h3>
+								<strong>- Responsive</strong>
+								<a href="http://www.kpa1966.or.kr/" title="새창으로 열림" target="_blank">
+									<img src="images/kpa.jpg" alt="한국소아마비협회">
+								</a>
 							</li>
 							<li data-aos="fade-up">
-								<h3 class="work_tit">대한응용근신경학회</h3>
-								<strong>- PC</strong>
-								<a href="http://akmd.gamgakdesign.com/main.php" style="background:url(images/main/icak01.jpg) no-repeat top center  / cover" target="_blank"></a>
+								<h3>한국안전기술협회</h3>
+								<strong>- Responsive</strong>
+								<a href="http://edu.korsta.or.kr/" title="새창으로 열림" target="_blank">
+									<img src="images/ksta.jpg" alt="한국안전기술협회">
+								</a>
 							</li>
 							<li data-aos="fade-up">
-								<h3 class="work_tit">대한응용근신경학회 한방쇼핑몰</h3>
-								<strong>- PC</strong>
-								<a href="http://akomd.gamgakdesign.com/main.php" style="background:url(images/main/icak02.jpg) no-repeat top center  / cover" target="_blank"></a>
+								<h3>LEAD SPACE</h3>
+								<strong>- Responsive</strong>
+								<a href="http://www.leadspace.co.kr/" title="새창으로 열림" target="_blank">
+									<img src="images/leadspace.jpg" alt="LEAD SPACE">
+								</a>
 							</li>
 							<li data-aos="fade-up">
-								<h3 class="work_tit">INTERWAVE</h3>
-								<strong>- PC</strong>
-								<a href="http://www.interwave.co.kr/main.do" style="background:url(images/main/interwave.jpg) no-repeat center center  / cover" target="_blank"></a>
+								<h3>솔토지빈</h3>
+								<strong>- Responsive</strong>
+								<a href="http://www.soltos.kr/" title="새창으로 열림" target="_blank">
+									<img src="images/soltozibin.jpg" alt="솔토지빈">
+								</a>
 							</li>
 							<li data-aos="fade-up">
-								<h3 class="work_tit">인천광역시 서구시설관리공단</h3>
-								<strong>- PC</strong>
-								<a href="http://www.issi.or.kr/recruit/main.asp" style="background:url(images/main/issi.jpg) no-repeat center center  / cover" target="_blank"></a>
+								<h3>성호건설</h3>
+								<strong>- Responsive</strong>
+								<a href="http://www.isunghoenc.com/" title="새창으로 열림" target="_blank">
+									<img src="images/sungho.jpg" alt="성호건설">
+								</a>
 							</li>
 							<li data-aos="fade-up">
-								<h3 class="work_tit">정립장애인 보호작업장</h3>
-								<strong>- PC</strong>
-								<a href="http://www.jnsw.or.kr/" style="background:url(images/main/jeongnip02.jpg) no-repeat top center  / cover" target="_blank"></a>
+								<h3>TKIS</h3>
+								<strong>- Responsive</strong>
+								<a href="http://www.tkisco.com/" title="새창으로 열림" target="_blank">
+									<img src="images/tkis.jpg" alt="TKIS">
+								</a>
 							</li>
 							<li data-aos="fade-up">
-								<h3 class="work_tit">가람교역</h3>
-								<strong>- PC</strong>
-								<a href="http://www.karamtc.co.kr/" style="background:url(images/main/karam.jpg) no-repeat center center  / cover" target="_blank"></a>
+								<h3>청년이룸</h3>
+								<strong>- Responsive</strong>
+								<a href="http://www.youtheroom.kr/" title="새창으로 열림" target="_blank">
+									<img src="images/youtheroom.jpg" alt="청년이룸">
+								</a>
 							</li>
 							<li data-aos="fade-up">
-								<h3 class="work_tit">소꿉</h3>
-								<strong>- PC</strong>
-								<a href="http://www.soggup.com/" style="background:url(images/main/soggup.jpg) no-repeat center center  / cover" target="_blank"></a>
-							</li>
-							<li data-aos="fade-up">
-								<h3 class="work_tit">KGFS 한국가스시설안전관리원</h3>
-								<strong>- PC</strong>
-								<a href="http://www.kgfs.kr/" style="background:url(images/main/kgfs.jpg) no-repeat center center  / cover" target="_blank"></a>
-							</li>
-							<li data-aos="fade-up">
-								<h3 class="work_tit">가천대학교 한국 불평등 연구 랩</h3>
-								<strong>- PC</strong>
-								<a href="http://www.kirl.re.kr/" style="background:url(images/main/ksps.jpg) no-repeat top center  / cover" target="_blank"></a>
-							</li>
-							<li data-aos="fade-up">
-								<h3 class="work_tit">미래민주당</h3>
-								<strong>- PC</strong>
-								<a href="http://www.miraeminjoo.co.kr/main.php" style="background:url(images/main/mirae.jpg) no-repeat top center  / cover" target="_blank"></a>
-							</li>
-							<li data-aos="fade-up">
-								<h3 class="work_tit">MOA IP</h3>
-								<strong>- PC</strong>
-								<a href="http://moaip.gamgakdesign.com/main.php" style="background:url(images/main/moa.jpg) no-repeat center center  / cover" target="_blank"></a>
-							</li>
-							<li data-aos="fade-up">
-								<h3 class="work_tit">네오테크코리아</h3>
-								<strong>- PC</strong>
-								<a href="http://www.neotechkorea.net/" style="background:url(images/main/neotech.jpg) no-repeat center center  / cover" target="_blank"></a>
-							</li>
-							<li data-aos="fade-up">
-								<h3 class="work_tit">신우기술</h3>
-								<strong>- PC</strong>
-								<a href="http://www.shinwooes.co.kr/" style="background:url(images/main/shinwoo.jpg) no-repeat center center  / cover" target="_blank"></a>
-							</li>
-							<li data-aos="fade-up">
-								<h3 class="work_tit">APLUS</h3>
-								<strong>- PC</strong>
-								<a href="http://aplusarchi.com/" style="background:url(images/main/aplus.jpg) no-repeat top center  / cover" target="_blank"></a>
-							</li>
-							<li data-aos="fade-up">
-								<h3 class="work_tit">에버에이스쉬핑</h3>
-								<strong>- PC</strong>
-								<a href="http://www.everaceship.co.kr/" style="background:url(images/main/everace.jpg) no-repeat center center  / cover" target="_blank"></a>
-							</li>
-							<li data-aos="fade-up">
-								<h3 class="work_tit">협동조합소스</h3>
-								<strong>- PC</strong>
-								<a href="http://www.xn--2q1bv3x9xat3op6rz2a.com/main.php" style="background:url(images/main/sos01.jpg) no-repeat center center  / cover" target="_blank"></a>
-							</li>
-							<li data-aos="fade-up">
-								<h3 class="work_tit">협동조합소스 COMPANY</h3>
-								<strong>- PC</strong>
-								<a href="http://www.xn--2q1bv3x9xat3op6rz2a.com/company/" style="background:url(images/main/sos02.jpg) no-repeat top center  / cover" target="_blank"></a>
-							</li>
-							<li data-aos="fade-up">
-								<h3 class="work_tit">군산대학교 어류양식학연구실</h3>
-								<strong>- PC</strong>
-								<a href="http://fishaqualab.gamgakdesign.com/main.php" style="background:url(images/main/ksnu.jpg) no-repeat center center  / cover" target="_blank"></a>
-							</li>
-							<li data-aos="fade-up">
-								<h3 class="work_tit">SURVEY HOUSE</h3>
-								<strong>- PC</strong>
-								<a href="http://www.surveyhouse.co.kr/" style="background:url(images/main/surveyhouse.jpg) no-repeat top center  / cover" target="_blank"></a>
-							</li>
-							<li data-aos="fade-up">
-								<h3 class="work_tit">THE CONVENTION</h3>
-								<strong>- PC</strong>
-								<a href="http://theconvention.co.kr/ydp/" style="background:url(images/main/the_convention.jpg) no-repeat top center  / cover" target="_blank"></a>
-							</li>
-							<li data-aos="fade-up">
-								<h3 class="work_tit">국제경찰무도연맹</h3>
-								<strong>- PC</strong>
-								<a href="http://ipmf.kr/" style="background:url(images/main/police.jpg) no-repeat top center  / cover" target="_blank"></a>
-							</li>
-							<li data-aos="fade-up">
-								<h3 class="work_tit">PEJA</h3>
-								<strong>- PC</strong>
-								<a href="http://pejakorea.com/" style="background:url(images/main/peja.jpg) no-repeat center center  / cover" target="_blank"></a>
-							</li>
-							<li data-aos="fade-up">
-								<h3 class="work_tit">에스에스가설산업</h3>
-								<strong>- PC</strong>
-								<a href="http://ssgamgak.gamgakdesign.com/main.php" style="background:url(images/main/ss.jpg) no-repeat top center  / cover" target="_blank"></a>
-							</li>
-							<li data-aos="fade-up">
-								<h3 class="work_tit">IDDRG</h3>
-								<strong>- PC</strong>
-								<a href="http://www.iddrg2020.kr/main.php" style="background:url(images/main/iddrg.jpg) no-repeat center center  / cover" target="_blank"></a>
-							</li>
-							<li data-aos="fade-up">
-								<h3 class="work_tit">JLABS</h3>
-								<strong>- PC</strong>
-								<a href="http://jlabs.co.kr/" style="background:url(images/main/jlabs.jpg) no-repeat center center  / cover" target="_blank"></a>
-							</li>
-							<li data-aos="fade-up">
-								<h3 class="work_tit">좋은이름작명원</h3>
-								<strong>- PC</strong>
-								<a href="http://www.zonirum.com/" style="background:url(images/main/zonirum.jpg) no-repeat top center  / cover" target="_blank"></a>
-							</li>
-							<li data-aos="fade-up">
-								<h3 class="work_tit">제이엠신용정보</h3>
-								<strong>- PC</strong>
-								<a href="http://www.jmcinfo.com/main.php" style="background:url(images/main/jm.jpg) no-repeat center center  / cover" target="_blank"></a>
-							</li>
-							<li data-aos="fade-up">
-								<h3 class="work_tit">삼기</h3>
-								<strong>- PC</strong>
-								<a href="http://www.samkicorp.co.kr/" style="background:url(images/main/samki.jpg) no-repeat center center  / cover" target="_blank"></a>
+								<h3>SEAZONE</h3>
+								<strong>- Responsive</strong>
+								<a href="http://www.seazonekorea.com/" title="새창으로 열림" target="_blank">
+									<img src="images/seazone.jpg" alt="SEAZONE">
+								</a>
 							</li>
 						</ul>
+						<!-- // responsive -->
+
+						<!-- pc -->
+						<ul class="tab" style="display:none;">
+							<li data-aos="fade-up">
+								<h3>우체국 예금</h3>
+								<strong>- PC</strong>
+								<a href="https://epostbank.go.kr/IHDMDM0000.do" title="새창으로 열림" target="_blank">
+									<img src="images/epost.jpg" alt="우체국 예금">
+								</a>
+							</li>
+							<li data-aos="fade-up">
+								<h3>MEGASTUDY</h3>
+								<strong>- PC</strong>
+								<a href="http://corp.megastudy.net/" title="새창으로 열림" target="_blank">
+									<img src="images/megastudy.jpg" alt="MEGASTUDY">
+								</a>
+							</li>
+							<li data-aos="fade-up">
+								<h3>TOYOKO INN</h3>
+								<strong>- PC</strong>
+								<a href="http://www.toyoko-inn.co.kr/" title="새창으로 열림" target="_blank">
+									<img src="images/toyokoinn.jpg" alt="SETOYOKO INNAZONE">
+								</a>
+							</li>
+							<li data-aos="fade-up">
+								<h3>홍익대학교 총동문회</h3>
+								<strong>- PC</strong>
+								<a href="http://www.hiuaa.or.kr/" title="새창으로 열림" target="_blank">
+									<img src="images/hiuaa.jpg" alt="홍익대학교 총동문회">
+								</a>
+							</li>
+							<li data-aos="fade-up">
+								<h3>SEOHO C&amp;I</h3>
+								<strong>- PC</strong>
+								<a href="http://www.seohoci.com/" title="새창으로 열림" target="_blank">
+									<img src="images/seohoci.jpg" alt="SEOHO C&I">
+								</a>
+							</li>
+							<li data-aos="fade-up">
+								<h3>INFINITY BOOKS</h3>
+								<strong>- PC</strong>
+								<a href="http://www.infinitybooks.co.kr/" title="새창으로 열림" target="_blank">
+									<img src="images/infinitybooks.jpg" alt="INFINITY BOOKS">
+								</a>
+							</li>
+							<li data-aos="fade-up">
+								<h3>안경상회</h3>
+								<strong>- PC</strong>
+								<a href="http://www.marketoptic.co.kr/" title="새창으로 열림" target="_blank">
+									<img src="images/marketoptic.jpg" alt="안경상회">
+								</a>
+							</li>
+							<li data-aos="fade-up">
+								<h3>HONG G</h3>
+								<strong>- PC</strong>
+								<a href="http://hongg.co.kr/" title="새창으로 열림" target="_blank">
+									<img src="images/hongg.jpg" alt="HONG G">
+								</a>
+							</li>
+							<li data-aos="fade-up">
+								<h3>퀸즈로즈</h3>
+								<strong>- PC</strong>
+								<a href="http://www.queensrose.com/" title="새창으로 열림" target="_blank">
+									<img src="images/queensrose.jpg" alt="퀸즈로즈">
+								</a>
+							</li>
+							<li data-aos="fade-up">
+								<h3>MC INVESTMENT</h3>
+								<strong>- PC</strong>
+								<a href="http://mcinv.co.kr/" title="새창으로 열림" target="_blank">
+									<img src="images/mc_investment.jpg" alt="MC INVESTMENT">
+								</a>
+							</li>
+							<li data-aos="fade-up">
+								<h3>ANT</h3>
+								<strong>- Responsive</strong>
+								<a href="http://antint.gamgakdesign.com/main.php" title="새창으로 열림" target="_blank">
+									<img src="images/ant.jpg" alt="ANT">
+								</a>
+							</li>
+							<li data-aos="fade-up">
+								<h3>북코리아</h3>
+								<strong>- Responsive</strong>
+								<a href="http://bookgamgak.gamgakdesign.com/main.php" title="새창으로 열림" target="_blank">
+									<img src="images/bookkorea.jpg" alt="북코리아">
+								</a>
+							</li>
+							<li data-aos="fade-up">
+								<h3>SPORTS DOCTORS</h3>
+								<strong>- PC</strong>
+								<a href="http://www.sportsdoctors.or.kr/" title="새창으로 열림" target="_blank">
+									<img src="images/sportsdoctors.jpg" alt="SPORTS DOCTORS">
+								</a>
+							</li>
+							<li data-aos="fade-up">
+								<h3>CASIO</h3>
+								<strong>- PC</strong>
+								<a href="http://www.casioprojector.co.kr/" title="새창으로 열림" target="_blank">
+									<img src="images/casio.jpg" alt="CASIO">
+								</a>
+							</li>
+							<li data-aos="fade-up">
+								<h3>CNC</h3>
+								<strong>- PC</strong>
+								<a href="http://www.cnctourkorea.com/" title="새창으로 열림" target="_blank">
+									<img src="images/cnc.jpg" alt="CNC">
+								</a>
+							</li>
+							<li data-aos="fade-up">
+								<h3>큐라미스</h3>
+								<strong>- PC</strong>
+								<a href="http://curamys.com/" title="새창으로 열림" target="_blank">
+									<img src="images/curamys.jpg" alt="큐라미스">
+								</a>
+							</li>
+							<li data-aos="fade-up">
+								<h3>가디안에듀</h3>
+								<strong>- PC</strong>
+								<a href="http://www.guardianedu.com/" title="새창으로 열림" target="_blank">
+									<img src="images/guardian.jpg" alt="가디안에듀">
+								</a>
+							</li>
+							<li data-aos="fade-up">
+								<h3>DIEM</h3>
+								<strong>- PC</strong>
+								<a href="http://www.diemarchitecture.com/" title="새창으로 열림" target="_blank">
+									<img src="images/diem.jpg" alt="DIEM">
+								</a>
+							</li>
+							<li data-aos="fade-up">
+								<h3>EXOSOME</h3>
+								<strong>- PC</strong>
+								<a href="http://www.exosomeplus.com/" title="새창으로 열림" target="_blank">
+									<img src="images/exosome.jpg" alt="EXOSOME">
+								</a>
+							</li>
+							<li data-aos="fade-up">
+								<h3>인하대학교 글로벌산업환경융합전공</h3>
+								<strong>- PC</strong>
+								<a href="http://ensgamgak.gamgakdesign.com/main.php" title="새창으로 열림" target="_blank">
+									<img src="images/giet.jpg" alt="인하대학교 글로벌산업환경융합전공">
+								</a>
+							</li>
+							<li data-aos="fade-up">
+								<h3>국제미래학회</h3>
+								<strong>- PC</strong>
+								<a href="http://gfuturestudy.org/" title="새창으로 열림" target="_blank">
+									<img src="images/globalfuture.jpg" alt="국제미래학회">
+								</a>
+							</li>
+							<li data-aos="fade-up">
+								<h3>한국환경기술인협회</h3>
+								<strong>- PC</strong>
+								<a href="http://hrd.keef.or.kr/" title="새창으로 열림" target="_blank">
+									<img src="images/hrd.jpg" alt="한국환경기술인협회">
+								</a>
+							</li>
+							<li data-aos="fade-up">
+								<h3>화 스튜디오</h3>
+								<strong>- PC</strong>
+								<a href="http://harmonyhwa.gamgakdesign.com/main.php" title="새창으로 열림" target="_blank">
+									<img src="images/hwa.jpg" alt="화 스튜디오">
+								</a>
+							</li>
+							<li data-aos="fade-up">
+								<h3>한양대학교 건강케어</h3>
+								<strong>- PC</strong>
+								<a href="http://www.hycare.or.kr/main.php" title="새창으로 열림" target="_blank">
+									<img src="images/hycare.jpg" alt="한양대학교 건강케어">
+								</a>
+							</li>
+							<li data-aos="fade-up">
+								<h3>한양대학교 최고경영자</h3>
+								<strong>- PC</strong>
+								<a href="http://www.hyceo.or.kr/" title="새창으로 열림" target="_blank">
+									<img src="images/hyceo.jpg" alt="한양대학교 최고경영자">
+								</a>
+							</li>
+							<li data-aos="fade-up">
+								<h3>대한응용근신경학회</h3>
+								<strong>- PC</strong>
+								<a href="http://akmd.gamgakdesign.com/main.php" title="새창으로 열림" target="_blank">
+									<img src="images/icak01.jpg" alt="대한응용근신경학회">
+								</a>
+							</li>
+							<li data-aos="fade-up">
+								<h3>INTERWAVE</h3>
+								<strong>- PC</strong>
+								<a href="http://www.interwave.co.kr/main.do" title="새창으로 열림" target="_blank">
+									<img src="images/interwave.jpg" alt="INTERWAVE">
+								</a>
+							</li>
+							<li data-aos="fade-up">
+								<h3>인천광역시 서구시설관리공단</h3>
+								<strong>- PC</strong>
+								<a href="http://www.issi.or.kr/recruit/main.asp" title="새창으로 열림" target="_blank">
+									<img src="images/issi.jpg" alt="인천광역시 서구시설관리공단">
+								</a>
+							</li>
+							<li data-aos="fade-up">
+								<h3>정립장애인 보호작업장</h3>
+								<strong>- PC</strong>
+								<a href="http://www.jnsw.or.kr/" title="새창으로 열림" target="_blank">
+									<img src="images/jeongnip02.jpg" alt="정립장애인 보호작업장">
+								</a>
+							</li>
+							<li data-aos="fade-up">
+								<h3>소꿉</h3>
+								<strong>- PC</strong>
+								<a href="http://www.soggup.com/" title="새창으로 열림" target="_blank">
+									<img src="images/soggup.jpg" alt="소꿉">
+								</a>
+							</li>
+							<li data-aos="fade-up">
+								<h3>KGFS 한국가스시설안전관리원</h3>
+								<strong>- PC</strong>
+								<a href="http://www.kgfs.kr/" title="새창으로 열림" target="_blank">
+									<img src="images/kgfs.jpg" alt="KGFS 한국가스시설안전관리원">
+								</a>
+							</li>
+							<li data-aos="fade-up">
+								<h3>가천대학교 한국 불평등 연구 랩</h3>
+								<strong>- PC</strong>
+								<a href="http://www.kirl.re.kr/" title="새창으로 열림" target="_blank">
+									<img src="images/ksps.jpg" alt="가천대학교 한국 불평등 연구 랩">
+								</a>
+							</li>
+							<li data-aos="fade-up">
+								<h3>MOA IP</h3>
+								<strong>- PC</strong>
+								<a href="http://moaip.gamgakdesign.com/main.php" title="새창으로 열림" target="_blank">
+									<img src="images/moa.jpg" alt="MOA IP">
+								</a>
+							</li>
+							<li data-aos="fade-up">
+								<h3>네오테크코리아</h3>
+								<strong>- PC</strong>
+								<a href="http://www.neotechkorea.net/" title="새창으로 열림" target="_blank">
+									<img src="images/neotech.jpg" alt="네오테크코리아">
+								</a>
+							</li>
+							<li data-aos="fade-up">
+								<h3>신우기술</h3>
+								<strong>- PC</strong>
+								<a href="http://www.shinwooes.co.kr/" title="새창으로 열림" target="_blank">
+									<img src="images/shinwoo.jpg" alt="신우기술">
+								</a>
+							</li>
+							<li data-aos="fade-up">
+								<h3>APLUS</h3>
+								<strong>- PC</strong>
+								<a href="http://aplusarchi.com/" title="새창으로 열림" target="_blank">
+									<img src="images/aplus.jpg" alt="APLUS">
+								</a>
+							</li>
+							<li data-aos="fade-up">
+								<h3>에버에이스쉬핑</h3>
+								<strong>- PC</strong>
+								<a href="http://www.everaceship.co.kr/" title="새창으로 열림" target="_blank">
+									<img src="images/everace.jpg" alt="에버에이스쉬핑">
+								</a>
+							</li>
+							<li data-aos="fade-up">
+								<h3>군산대학교 어류양식학연구실</h3>
+								<strong>- PC</strong>
+								<a href="http://fishaqualab.gamgakdesign.com/main.php" title="새창으로 열림" target="_blank">
+									<img src="images/ksnu.jpg" alt="군산대학교 어류양식학연구실">
+								</a>
+							</li>
+							<li data-aos="fade-up">
+								<h3>PEJA</h3>
+								<strong>- PC</strong>
+								<a href="http://pejakorea.com/" title="새창으로 열림" target="_blank">
+									<img src="images/peja.jpg" alt="PEJA">
+								</a>
+							</li>
+							<li data-aos="fade-up">
+								<h3>에스에스가설산업</h3>
+								<strong>- PC</strong>
+								<a href="http://ssgamgak.gamgakdesign.com/main.php" title="새창으로 열림" target="_blank">
+									<img src="images/ss.jpg" alt="에스에스가설산업">
+								</a>
+							</li>
+							<li data-aos="fade-up">
+								<h3>좋은이름작명원</h3>
+								<strong>- PC</strong>
+								<a href="http://www.zonirum.com/" title="새창으로 열림" target="_blank">
+									<img src="images/zonirum.jpg" alt="좋은이름작명원">
+								</a>
+							</li>
+							<li data-aos="fade-up">
+								<h3>삼기</h3>
+								<strong>- PC</strong>
+								<a href="http://www.samkicorp.co.kr/" title="새창으로 열림" target="_blank">
+									<img src="images/samki.jpg" alt="삼기">
+								</a>
+							</li>
+						</ul>
+						<!-- // pc -->
+
 						<!-- Mobile -->
-						<ul class="work_list clfix tab work_mob">
+						<ul class="tab tab_mob" style="display:none;">
 							<li data-aos="fade-up">
-								<h3 class="work_tit">CURAMYS</h3>
+								<h3>CURAMYS</h3>
 								<strong>- Mobile</strong>
-								<a href="http://www.curamys.com/mobile/main.php" style="background:url(images/work/curamys.jpg) no-repeat center center  / cover" target="_blank"></a>
+								<a href="http://www.curamys.com/mobile/main.php" title="새창으로 열림" target="_blank">
+									<img src="images/curamys_m.jpg" alt="CURAMYS">
+								</a>
 							</li>
 							<li data-aos="fade-up">
-								<h3 class="work_tit">TOYOKO INN</h3>
+								<h3>TOYOKO INN</h3>
 								<strong>- Mobile</strong>
-								<a href="http://www.toyoko-inn.co.kr/mobile/main.php" style="background:url(images/work/toyokoinn.jpg) no-repeat center center  / cover" target="_blank"></a>
+								<a href="http://www.toyoko-inn.co.kr/mobile/main.php" title="새창으로 열림" target="_blank">
+									<img src="images/toyokoinn_m.jpg" alt="TOYOKO INN">
+								</a>
 							</li>
 							<li data-aos="fade-up">
-								<h3 class="work_tit">YIDO</h3>
+								<h3>SPORTS DOCTOR</h3>
 								<strong>- Mobile</strong>
-								<a href="http://www.y-cf.kr/mobile/main.php" style="background:url(images/work/yido.jpg) no-repeat center center  / cover" target="_blank"></a>
+								<a href="http://www.sportsdoctors.or.kr/mobile/main.php" title="새창으로 열림" target="_blank">
+									<img src="images/sportsdoctor.jpg" alt="SPORTS DOCTOR">
+								</a>
 							</li>
 							<li data-aos="fade-up">
-								<h3 class="work_tit">SPORTS DOCTOR</h3>
+								<h3>DANIEL CAMPANELLA</h3>
 								<strong>- Mobile</strong>
-								<a href="http://www.sportsdoctors.or.kr/mobile/main.php" style="background:url(images/work/sportsdoctor.jpg) no-repeat center center  / cover" target="_blank"></a>
+								<a href="http://www.danielcampanella.com/mobile/main.php" title="새창으로 열림" target="_blank">
+									<img src="images/daniel.jpg" alt="DANIEL CAMPANELLA">
+								</a>
 							</li>
 							<li data-aos="fade-up">
-								<h3 class="work_tit">DANIEL CAMPANELLA</h3>
+								<h3>독서당</h3>
 								<strong>- Mobile</strong>
-								<a href="http://www.danielcampanella.com/mobile/main.php" style="background:url(images/work/daniel.jpg) no-repeat center center  / cover" target="_blank"></a>
+								<a href="http://dokseodang.sd.go.kr/mobile/main.php" title="새창으로 열림" target="_blank">
+									<img src="images/dokseodang.jpg" alt="독서당">
+								</a>
 							</li>
 							<li data-aos="fade-up">
-								<h3 class="work_tit">DEJAVU</h3>
+								<h3>DUTCH &amp; BEAN</h3>
 								<strong>- Mobile</strong>
-								<a href="http://dejavulens.co.kr/mobile/main.php" style="background:url(images/work/dejavu.jpg) no-repeat center center  / cover" target="_blank"></a>
+								<a href="http://www.dutchandbean.com/mobile/main.php" title="새창으로 열림" target="_blank">
+									<img src="images/dutch.jpg" alt="DUTCH & BEAN">
+								</a>
 							</li>
 							<li data-aos="fade-up">
-								<h3 class="work_tit">독서당</h3>
+								<h3>EXOSOME</h3>
 								<strong>- Mobile</strong>
-								<a href="http://dokseodang.sd.go.kr/mobile/main.php" style="background:url(images/work/dokseodang.jpg) no-repeat center center  / cover" target="_blank"></a>
+								<a href="http://www.exosomeplus.com/mobile/main.php" title="새창으로 열림" target="_blank">
+									<img src="images/exosome_m.jpg" alt="EXOSOME">
+								</a>
 							</li>
 							<li data-aos="fade-up">
-								<h3 class="work_tit">DUTCH & BEAN</h3>
+								<h3>GIGDC</h3>
 								<strong>- Mobile</strong>
-								<a href="http://www.dutchandbean.com/mobile/main.php" style="background:url(images/work/dutch.jpg) no-repeat center center  / cover" target="_blank"></a>
+								<a href="http://www.gigdc.or.kr/mobile/main.php" title="새창으로 열림" target="_blank">
+									<img src="images/gigdc.jpg" alt="GIGDC">
+								</a>
 							</li>
 							<li data-aos="fade-up">
-								<h3 class="work_tit">EXOSOME</h3>
+								<h3>가디안에듀</h3>
 								<strong>- Mobile</strong>
-								<a href="http://www.exosomeplus.com/mobile/main.php" style="background:url(images/work/exosome.jpg) no-repeat center center  / cover" target="_blank"></a>
+								<a href="http://www.guardianedu.com/mobile/main.php" title="새창으로 열림" target="_blank">
+									<img src="images/guardian_m.jpg" alt="가디안에듀">
+								</a>
 							</li>
 							<li data-aos="fade-up">
-								<h3 class="work_tit">GIGDC</h3>
+								<h3>헤어무니</h3>
 								<strong>- Mobile</strong>
-								<a href="http://www.gigdc.or.kr/mobile/main.php" style="background:url(images/work/gigdc.jpg) no-repeat center center  / cover" target="_blank"></a>
+								<a href="http://www.xn--9i1bs3nn4iuzq.com/mobile/main.php" title="새창으로 열림" target="_blank">
+									<img src="images/hairmuni.jpg" alt="헤어무니">
+								</a>
 							</li>
 							<li data-aos="fade-up">
-								<h3 class="work_tit">가디안에듀</h3>
+								<h3>KSLCA</h3>
 								<strong>- Mobile</strong>
-								<a href="http://www.guardianedu.com/mobile/main.php" style="background:url(images/work/guardian.jpg) no-repeat center center  / cover" target="_blank"></a>
+								<a href="http://www.kslca.com/mobile/main.php" title="새창으로 열림" target="_blank">
+									<img src="images/kslca.jpg" alt="KSLCA">
+								</a>
 							</li>
 							<li data-aos="fade-up">
-								<h3 class="work_tit">하하종합건설</h3>
+								<h3>KT</h3>
 								<strong>- Mobile</strong>
-								<a href="http://haha9988.gamgakdesign.com/mobile/main.php" style="background:url(images/work/haha.jpg) no-repeat center center  / cover" target="_blank"></a>
+								<a href="http://www.ktybshop.com/mobile/main_mob.php" title="새창으로 열림" target="_blank">
+									<img src="images/ktyb.jpg" alt="KT">
+								</a>
 							</li>
 							<li data-aos="fade-up">
-								<h3 class="work_tit">헤어무니</h3>
+								<h3>LIFE CARE</h3>
 								<strong>- Mobile</strong>
-								<a href="http://www.xn--9i1bs3nn4iuzq.com/mobile/main.php" style="background:url(images/work/hairmuni.jpg) no-repeat center center  / cover" target="_blank"></a>
+								<a href="https://mcare.dgist.ac.kr/mobile/main.php" title="새창으로 열림" target="_blank">
+									<img src="images/lifecare.jpg" alt="LIFE CARE">
+								</a>
 							</li>
 							<li data-aos="fade-up">
-								<h3 class="work_tit">연꽃집</h3>
+								<h3>법무법인 MK</h3>
 								<strong>- Mobile</strong>
-								<a href="http://www.xn--js0b034bfxc.com/mobile/main.php" style="background:url(images/work/hanse.jpg) no-repeat center center  / cover" target="_blank"></a>
+								<a href="http://www.iminlawyer.com/mobile/main.php" title="새창으로 열림" target="_blank">
+									<img src="images/mk.jpg" alt="법무법인 MK">
+								</a>
 							</li>
 							<li data-aos="fade-up">
-								<h3 class="work_tit">KSLCA</h3>
+								<h3>NEO TECH</h3>
 								<strong>- Mobile</strong>
-								<a href="http://www.kslca.com/mobile/main.php" style="background:url(images/work/kslca.jpg) no-repeat center center  / cover" target="_blank"></a>
+								<a href="http://www.neotechkorea.net/mobile/" title="새창으로 열림" target="_blank">
+									<img src="images/neotech_m.jpg" alt="NEO TECH">
+								</a>
 							</li>
 							<li data-aos="fade-up">
-								<h3 class="work_tit">KT</h3>
+								<h3>직업건강협회</h3>
 								<strong>- Mobile</strong>
-								<a href="http://www.ktybshop.com/mobile/main_mob.php" style="background:url(images/work/ktyb.jpg) no-repeat center center  / cover" target="_blank"></a>
+								<a href="http://www.kaohn.or.kr/mobile/main.php" title="새창으로 열림" target="_blank">
+									<img src="images/nurses.jpg" alt="직업건강협회">
+								</a>
 							</li>
 							<li data-aos="fade-up">
-								<h3 class="work_tit">LIFE CARE</h3>
+								<h3>으뜸안경</h3>
 								<strong>- Mobile</strong>
-								<a href="https://mcare.dgist.ac.kr/mobile/main.php" style="background:url(images/work/lifecare.jpg) no-repeat center center  / cover" target="_blank"></a>
+								<a href="http://www.top-plus.co.kr/mobile/main.php" title="새창으로 열림" target="_blank">
+									<img src="images/optical.jpg" alt="으뜸안경">
+								</a>
 							</li>
 							<li data-aos="fade-up">
-								<h3 class="work_tit">협동조합소스</h3>
+								<h3>PARK ART VILLAS</h3>
 								<strong>- Mobile</strong>
-								<a href="http://www.xn--2q1bv3x9xat3op6rz2a.com/mobile/main.php" style="background:url(images/work/lube01.jpg) no-repeat center center  / cover" target="_blank"></a>
+								<a href="http://www.parkartvillas.co.kr/mobile/main.php" title="새창으로 열림" target="_blank">
+									<img src="images/parkart.jpg" alt="PARK ART VILLAS">
+								</a>
 							</li>
 							<li data-aos="fade-up">
-								<h3 class="work_tit">협동조합소스</h3>
+								<h3>RAON</h3>
 								<strong>- Mobile</strong>
-								<a href="http://www.xn--2q1bv3x9xat3op6rz2a.com/mobile/company/" style="background:url(images/work/lube02.jpg) no-repeat center center  / cover" target="_blank"></a>
+								<a href="http://raongamgak.gamgakdesign.com/mobile/main.php" title="새창으로 열림" target="_blank">
+									<img src="images/raon.jpg" alt="RAON">
+								</a>
 							</li>
 							<li data-aos="fade-up">
-								<h3 class="work_tit">하나미앤미</h3>
+								<h3>SAMWON PLAZA</h3>
 								<strong>- Mobile</strong>
-								<a href="http://www.hanarice.co.kr/mobile/main.php" style="background:url(images/work/miandmi.jpg) no-repeat center center  / cover" target="_blank"></a>
+								<a href="http://www.swboutique.co.kr/mobile/" title="새창으로 열림" target="_blank">
+									<img src="images/samwon.jpg" alt="SAMWON PLAZA">
+								</a>
 							</li>
 							<li data-aos="fade-up">
-								<h3 class="work_tit">법무법인 MK</h3>
+								<h3>SKC 노동조합</h3>
 								<strong>- Mobile</strong>
-								<a href="http://www.iminlawyer.com/mobile/main.php" style="background:url(images/work/mk.jpg) no-repeat center center  / cover" target="_blank"></a>
+								<a href="http://www.skc-union.com/mobile/main.php" title="새창으로 열림" target="_blank">
+									<img src="images/skc.jpg" alt="SKC 노동조합">
+								</a>
 							</li>
 							<li data-aos="fade-up">
-								<h3 class="work_tit">NEO TECH</h3>
+								<h3>TSP</h3>
 								<strong>- Mobile</strong>
-								<a href="http://www.neotechkorea.net/mobile/" style="background:url(images/work/neotech.jpg) no-repeat center center  / cover" target="_blank"></a>
+								<a href="http://tspkorea.gamgakdesign.com/mobile/main.php" title="새창으로 열림" target="_blank">
+									<img src="images/tsp.jpg" alt="TSP">
+								</a>
 							</li>
 							<li data-aos="fade-up">
-								<h3 class="work_tit">직업건강협회</h3>
+								<h3>유니연합 소아청소년과</h3>
 								<strong>- Mobile</strong>
-								<a href="http://www.kaohn.or.kr/mobile/main.php" style="background:url(images/work/nurses.jpg) no-repeat center center  / cover" target="_blank"></a>
+								<a href="http://www.uniped.co.kr/mobile/main.php" title="새창으로 열림" target="_blank">
+									<img src="images/uni.jpg" alt="유니연합 소아청소년과">
+								</a>
 							</li>
 							<li data-aos="fade-up">
-								<h3 class="work_tit">으뜸안경</h3>
+								<h3>VINIDEUS</h3>
 								<strong>- Mobile</strong>
-								<a href="http://www.top-plus.co.kr/mobile/main.php" style="background:url(images/work/optical.jpg) no-repeat center center  / cover" target="_blank"></a>
+								<a href="http://www.vinideuswine.co.kr/mobile/main.php" title="새창으로 열림" target="_blank">
+									<img src="images/vinideus.jpg" alt="VINIDEUS">
+								</a>
 							</li>
 							<li data-aos="fade-up">
-								<h3 class="work_tit">PARK ART VILLAS</h3>
+								<h3>좋은이름작명원</h3>
 								<strong>- Mobile</strong>
-								<a href="http://www.parkartvillas.co.kr/mobile/main.php" style="background:url(images/work/parkart.jpg) no-repeat center center  / cover" target="_blank"></a>
-							</li>
-							<li data-aos="fade-up">
-								<h3 class="work_tit">RAON</h3>
-								<strong>- Mobile</strong>
-								<a href="http://raongamgak.gamgakdesign.com/mobile/main.php" style="background:url(images/work/raon.jpg) no-repeat center center  / cover" target="_blank"></a>
-							</li>
-							<li data-aos="fade-up">
-								<h3 class="work_tit">RGM</h3>
-								<strong>- Mobile</strong>
-								<a href="http://www.rgm.co.kr/mobile/main.php" style="background:url(images/work/rgm.jpg) no-repeat center center  / cover" target="_blank"></a>
-							</li>
-							<li data-aos="fade-up">
-								<h3 class="work_tit">SAMWON PLAZA</h3>
-								<strong>- Mobile</strong>
-								<a href="http://www.swboutique.co.kr/mobile/" style="background:url(images/work/samwon.jpg) no-repeat center center  / cover" target="_blank"></a>
-							</li>
-							<li data-aos="fade-up">
-								<h3 class="work_tit">SKC 노동조합</h3>
-								<strong>- Mobile</strong>
-								<a href="http://www.skc-union.com/mobile/main.php" style="background:url(images/work/skc.jpg) no-repeat center center  / cover" target="_blank"></a>
-							</li>
-							<li data-aos="fade-up">
-								<h3 class="work_tit">수리수리 하우스</h3>
-								<strong>- Mobile</strong>
-								<a href="http://naraegamgak.gamgakdesign.com/mobile/main.php" style="background:url(images/work/surisuri.jpg) no-repeat center center  / cover" target="_blank"></a>
-							</li>
-							<li data-aos="fade-up">
-								<h3 class="work_tit">TSP</h3>
-								<strong>- Mobile</strong>
-								<a href="http://tspkorea.gamgakdesign.com/mobile/main.php" style="background:url(images/work/tsp.jpg) no-repeat center center  / cover" target="_blank"></a>
-							</li>
-							<li data-aos="fade-up">
-								<h3 class="work_tit">유니연합 소아청소년과</h3>
-								<strong>- Mobile</strong>
-								<a href="http://www.uniped.co.kr/mobile/main.php" style="background:url(images/work/uni.jpg) no-repeat center center  / cover" target="_blank"></a>
-							</li>
-							<li data-aos="fade-up">
-								<h3 class="work_tit">VINIDEUS</h3>
-								<strong>- Mobile</strong>
-								<a href="http://www.vinideuswine.co.kr/mobile/main.php" style="background:url(images/work/vinideus.jpg) no-repeat center center  / cover" target="_blank"></a>
-							</li>
-							<li data-aos="fade-up">
-								<h3 class="work_tit">좋은이름작명원</h3>
-								<strong>- Mobile</strong>
-								<a href="http://zonirum.com/mobile/main.php" style="background:url(images/work/zonirum.jpg) no-repeat center center  / cover" target="_blank"></a>
+								<a href="http://zonirum.com/mobile/main.php" title="새창으로 열림" target="_blank">
+									<img src="images/zonirum_m.jpg" alt="좋은이름작명원">
+								</a>
 							</li>
 						</ul>
+						<!-- // Mobile -->
 					</div>
 				</div>
-				<div class="top_btn">TOP</div>
-			</div><!-- //sub_contents -->
-			<script>
-			    AOS.init({
-					duration: 800,
-					once : 1 
-				});
+			</div>
+		</main>
+		<footer class="footer">
+			<div class="foot_txt">
+				<span>Web Publisher ParkSoYoung Web Publisher ParkSoYoung Web Publisher ParkSoYoung Web Publisher ParkSoYoung
+					Web Publisher ParkSoYoung Web Publisher ParkSoYoung Web Publisher ParkSoYoung Web Publisher ParkSoYoung Web
+					Publisher ParkSoYoung Web Publisher ParkSoYoung Web Publisher ParkSoYoung Web Publisher ParkSoYoung Web
+					Publisher ParkSoYoung Web Publisher ParkSoYoung Web Publisher ParkSoYoung</span>
+			</div>
+		</footer>
 
-				var s = skrollr.init({
-					duration: function(currentTop, targetTop) {return 20000;}, 
-					easing: 'linear',
-					mobileCheck: function(){
-						  if((/Android|iPhone|iPad|iPod|BlackBerry|Windows Phone/i).test(navigator.userAgent || navigator.vendor || window.opera)){
-							   // mobile device
-						  }
-					 }
-				});
-				$('.list_type_btn a').click(function(){
-					$(this).addClass('active');
-					$('.list_type_btn a').not(this).removeClass('active');
-					if($(this).hasClass('list_type2')){
-						$('.mob_work').addClass('active');
-					}else{$('.mob_work').removeClass('active');}
-				});
-					
-				/*navigation*/
-				$('.navi_btn').click(function(){
-					$(this).toggleClass('on');
-					$('.navigation').fadeToggle('fast');
-					$('.navigation').toggleClass('on');
-				});
-				
-				/* tab */
-				var cnt = 0;
-				$('.tab_con .tab').hide().eq(0).show();
-				$('.tab_tit li').click(function() {
-					cnt = $(this).index()
-					$('.tab_tit li').removeClass('on').eq(cnt).addClass('on');
-					$('.tab_con .tab').hide().eq(cnt).fadeIn();
-				});
-				
-				/*top btn*/
-				$('.top_btn').click(function(){
-					$('html, body').animate({
-						scrollTop:0
-					}, 700)
-					return false;
-				});
-				
-				$(window).scroll(function(){
-					var scroll = $(window).scrollTop();
-					if(scroll > 1){
-						$('.top_btn').addClass('on');
-					}
-					else {$('.top_btn').removeClass('on');}
-				});
-			</script>
-		</div><!-- //wrap -->
-	</body>
+	</div><!-- //wrap -->
+</body>
+
 </html>
