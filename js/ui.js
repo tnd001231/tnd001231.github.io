@@ -29,7 +29,7 @@ $(function () {
 	});
 
 	/*top btn*/
-	$(document).on("click", ".top_btn", function () {
+	$(document).on("click", ".btn_top", function () {
 		$('html, body').animate({
 			scrollTop: 0
 		}, 700)
@@ -39,9 +39,9 @@ $(function () {
 	$(window).scroll(function () {
 		var scroll = $(window).scrollTop();
 		if (scroll > 1) {
-			$('.top_btn').addClass('on');
+			$('.btn_top').addClass('active');
 		} else {
-			$('.top_btn').removeClass('on');
+			$('.btn_top').removeClass('active');
 		}
 	});
 
